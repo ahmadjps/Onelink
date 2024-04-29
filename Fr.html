@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Clash Royale Link</title>
+</head>
+<body>
+    <button id="openLink">Open Clash Royale Link</button>
+
+    <script>
+        document.getElementById("openLink").addEventListener("click", function() {
+            // إنشاء رابط الدعوة
+            var link = "clashroyale://add_friend?tag=PQLJPCCVP&token=x9eth98c&platform=android";
+            
+            // فتح الرابط
+            window.location.href = link;
+
+            // تعطيل الزر بعد فتح الرابط
+            this.disabled = true;
+        });
+    </script>
+</body>
+</html>
